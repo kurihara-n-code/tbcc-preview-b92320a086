@@ -810,6 +810,10 @@ main { overflow: hidden; }
 .center-lead { max-width: 760px; margin: 0 auto 62px; color: #555; font-size: 17px; text-align: center; }
 .practice-list { display: grid; gap: 62px; }
 .practice-row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 50px; }
+.practice-row:not(:last-child) {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #1E2C5C;
+}
 .practice-row.reverse .practice-photo { order: 2; }
 .practice-photo {
   min-height: 370px;
